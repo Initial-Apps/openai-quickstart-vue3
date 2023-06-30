@@ -1,14 +1,14 @@
 {
-  "name": "vue3-express",
+  "name": "openai-quickstart-vue3",
   "version": "1.0.0",
-  "description": "A simple starter Vue3 app using Vite, with ExpressJS and NodeJS on the backend.",
+  "description": "A simple starter app for OpenAI using Vue, Vite, with ExpressJS and NodeJS on the backend.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Initial-Apps/vue3-express.git"
+    "url": "git+ssh://git@github.com/Initial-Apps/openai-quickstart-vue3.git"
   },
   "keywords": [
     "Vue3",
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Initial-Apps/vue3-express/issues"
+    "url": "https://github.com/Initial-Apps/openai-quickstart-vue3/issues"
   },
-  "homepage": "https://github.com/Initial-Apps/vue3-express#readme"
+  "homepage": "https://github.com/Initial-Apps/openai-quickstart-vue3#readme"
 }

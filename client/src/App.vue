@@ -1,11 +1,18 @@
 <template>
   <div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+      <link rel="icon" href="/dog.png" />
+    </Head>
+
     <main class="main">
+      <h3>Name my pet</h3>
       <form @submit.prevent="onSubmit">
         <input
           type="text"
-          placeholder="Enter Anything"
-          v-model="testInput"
+          name="animal"
+          placeholder="Enter an animal"
+          v-model="animalInput"
         />
         <input type="submit" value="Generate names" />
       </form>
@@ -21,7 +28,7 @@
 	export default defineComponent({
 		data() {
 			return {
-				testInput: "" as string,
+				animalInput: "" as string,
         result: "" as string,
 			}
 		},
@@ -29,7 +36,7 @@
 			onSubmit() {
         try {
           axios
-          .post("/api", { text: this.testInput })
+          .post("/api/generator", { animal: this.animalInput })
           .then((response) => {
             this.result = response.data.result;
           }, (error) => {
